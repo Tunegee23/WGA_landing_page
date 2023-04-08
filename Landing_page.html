@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=<device-width>, initial-scale=1.0" />
+    <title>landing page</title>
+  </head>
+  <style>
+    @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400&display=swap");
+    * {
+      margin: 0;
+      padding: 0;
+    }
+    body {
+      margin: 0px;
+      padding: 0px;
+      box-sizing: border-box;
+      font-family: "Poppins", sans-serif;
+    }
+    .container {
+      width: 1100px;
+      min-height: 100vh;
+      background-image: linear-gradient(
+          rgba(0, 0, 0, 0.65),
+          rgba(0, 0, 0, 0.65)
+        ),
+        url(background_image/IMG_7770.JPG);
+      background-position: center;
+      background-size: cover;
+    }
+    .row {
+      width: 700px;
+      padding: 0px 80px;
+    }
+    .navbar {
+      width: 1000px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      position: relative;
+      padding: 10px 0px;
+      z-index: 1;
+    }
+    .navbar ul {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      margin-top: 10px;
+    }
+    .navbar ul li {
+      list-style: none;
+    }
+    .navbar ul li a {
+      padding: 10px 15px;
+      border-radius: 5px;
+      font-family: sans-serif;
+      font-size: 10px;
+      color: rgb(250, 248, 248);
+      text-decoration: none;
+      margin: 5px;
+    }
+    .navbar ul li a:hover {
+      background-color: rgba(59, 59, 90, 0.76);
+    }
+    .navbar h1 {
+      color: white;
+      font-size: 30px;
+      font-weight: 500;
+      text-transform: uppercase;
+      margin-top: 10px;
+    }
+    .content {
+      width: 1100px;
+      min-height: 100vh;
+      position: absolute;
+      top: 0;
+      left: 0;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column;
+    }
+    .content h1 {
+      color: white;
+      font-size: 45;
+      font-weight: 400;
+    }
+    .content p {
+      font-size: 15px;
+      color: rgb(53, 51, 51);
+    }
+    .content a {
+      text-decoration: none;
+      margin-top: 20px;
+      font-size: 19px;
+      display: inline-block;
+      letter-spacing: 2px;
+      padding: 12px 15px;
+      background-color: rgb(204, 157, 95);
+      border-radius: 5px;
+      color: white;
+    }
+    .content a:hover {
+      background-color: rgba(59, 59, 90, 0.76);
+    }
+  </style>
+  <body>
+    <div class="container">
+      <div class="row">
+        <nav class="navbar">
+          <h1>WGA</h1>
+          <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">About_us</a></li>
+            <li><a href="#">Collection</a></li>
+            <li><a href="#">serives</a></li>
+            <li><a href="#">Contact_us</a></li>
+          </ul>
+        </nav>
+        <div class="content">
+          <h1>WHYGOABROAD FURNITURE</h1>
+          <p>Welcome to our landing page</p>
+          <a href="">enjoy the site</a>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
