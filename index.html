@@ -7,123 +7,210 @@
     <title>landing page</title>
   </head>
   <style>
-    @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400&display=swap");
+     @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400&display=swap");
     * {
       margin: 0;
       padding: 0;
     }
     body {
-      margin: 0px;
-      padding: 0px;
-      box-sizing: border-box;
-      font-family: "Poppins", sans-serif;
+   min-width: 200px;
+   background-size: cover;
+    font-family: "Poppins", sans-serif;
+   
     }
     .container {
-      width: 1100px;
-      min-height: 100vh;
-      background-image: linear-gradient(
-          rgba(0, 0, 0, 0.65),
-          rgba(0, 0, 0, 0.65)
-        ),
-        url(background_image/IMG_7770.JPG);
+      width: 1700px;
+      min-height: 70vh;
       background-position: center;
-      background-size: cover;
+    }
+     .animation {
+       width: 1700px;
+       height: 50hv;
+       background-size: contain;
+       background-color:transparent;
+       animation-name: example;
+       animation-duration:10s;
+       animation-delay: 2s;
+       animation-iteration-count: infinite;
+       animation-direction: alternate-reverse;  
+    }
+    @keyframes example{
+      0% {background-image: url(image/beks-mu-2tEdrFYjfMY-unsplash.jpg);}
+      25% {background-image: url(image/michael-happiness-iyeVnvg5yg4-unsplash.jpg);}
+      50% {background-image: url(image/sufyan-9SC234L-C5c-unsplash.jpg);}
+      100% {background-image: url(image/pexels-sami-aksu-12155597.jpg);}
     }
     .row {
-      width: 700px;
-      padding: 0px 80px;
+      width: 300px;
+      padding: 5px 20px;
     }
     .navbar {
-      width: 1000px;
+      width: 120px;
       display: flex;
       justify-content: space-between;
       align-items: center;
-      position: relative;
-      padding: 10px 0px;
+      padding: 10px;
       z-index: 1;
+      transform: translate(30px 100px);
+      position: fixed;
+    }
+     .navbar img {
+        width: 70px;
+        height: 10vh;
+        margin: 15px;
+        margin-top: 2%;
     }
     .navbar ul {
       display: flex;
       justify-content: center;
       align-items: center;
-      margin-top: 10px;
+      margin-top: 2px;
     }
     .navbar ul li {
       list-style: none;
     }
     .navbar ul li a {
-      padding: 10px 15px;
+      padding: 10px 40px;
       border-radius: 5px;
       font-family: sans-serif;
-      font-size: 10px;
+      font-size: 12px;
       color: rgb(250, 248, 248);
       text-decoration: none;
-      margin: 5px;
+      margin-left: 80%;
+      float: left;
+      display: inline-flex;
     }
     .navbar ul li a:hover {
       background-color: rgba(59, 59, 90, 0.76);
+      position:relative ;
     }
-    .navbar h1 {
-      color: white;
-      font-size: 30px;
-      font-weight: 500;
-      text-transform: uppercase;
-      margin-top: 10px;
+   
+    .search-bar {
+     position: fixed; 
+     border: 3px solid rgb(254, 253, 253);
+     border-radius: 20px;
+     padding: 3px 70px;
+     left: 72%;
+     bottom: 88%;
+     width:8%;
+     display: block;
+     justify-content: center;
+     color: rgb(88, 88, 88);
+     align-items: center;
     }
+    .search-bar input {
+    background: transparent;
+    border: 0;
+    outline: none;
+    font-size: 15px;
+    color: rgb(255, 254, 254);
+    padding: 5px ;
+   
+  }
     .content {
-      width: 1100px;
-      min-height: 100vh;
-      position: absolute;
-      top: 0;
-      left: 0;
-      display: flex;
+      width: 150px;
+      padding: 0;
       justify-content: center;
       align-items: center;
-      flex-direction: column;
     }
-    .content h1 {
-      color: white;
-      font-size: 45;
-      font-weight: 400;
+   .content h1 {
+      width: 1000px;
+      color: rgb(255, 253, 253);
+      font-size: 65px;
+      font-weight: 500;
+      display: block;
+      left: 89%;
+      padding: 0% 200%;
+      margin-top:170%;
+      letter-spacing: 5px;
     }
     .content p {
-      font-size: 15px;
-      color: rgb(53, 51, 51);
+    width: 400px;
+    font-size: 20px;
+    color: rgb(251, 251, 251);
+    text-transform: lowercase;
+    margin-top: 2%;
+    display: block;
+    text-align: center;
+    margin-left: 90%;
+    padding: 0px 230%;
+    
+  }
+ 
+  .container .Box {
+    position:relative;
+    width: 150px;
+    height: 70vh;
+    background:transparent;
+    left: 199%;
+    box-sizing: border-box;
+    border-radius: 5px;
+    margin: 10px;
+    align-items: center;
+    margin-top: 1%;
+  }
+  .Box .animation{
+       width: 100px;
+       height: 70hv;
+       background-size: contain;
+       background-color:transparent;
+       animation-name: example1;
+       animation-duration:10s;
+       animation-delay: 2s;
+       animation-iteration-count: infinite;
+       animation-direction: alternate-reverse;  
+       border-radius: 60px;
     }
-    .content a {
-      text-decoration: none;
-      margin-top: 20px;
-      font-size: 19px;
-      display: inline-block;
-      letter-spacing: 2px;
-      padding: 12px 15px;
-      background-color: rgb(204, 157, 95);
-      border-radius: 5px;
-      color: white;
+    @keyframes example1{
+      0% {background-color: rgba(59, 59, 90, 0.76);}
+      25% {background-color: rgba(29, 25, 25, 0.476)}
+      50% {background-color: rgba(176, 141, 81, 0.516);}
+      100% {background-color: rgba(57, 13, 13, 0.581)}
     }
-    .content a:hover {
-      background-color: rgba(59, 59, 90, 0.76);
-    }
+  
+  .Box a {
+    text-decoration: none;
+    font-size: 8px;
+    width: 100px;
+    display: table;
+    letter-spacing: 2px;
+    padding: 10% 8%;
+    background-color: transparent;
+    border-radius: 50px;
+    color: white;
+  }
+  .Box a:hover {
+    background-color: rgba(59, 59, 90, 0.76);
+  }
   </style>
   <body>
     <div class="container">
-      <div class="row">
-        <nav class="navbar">
-          <h1>WGA</h1>
-          <ul>
-            <li><a href="#">Home</a></li>
-            <li><a href="#">About_us</a></li>
-            <li><a href="#">Collection</a></li>
-            <li><a href="#">serives</a></li>
-            <li><a href="#">Contact_us</a></li>
-          </ul>
-        </nav>
-        <div class="content">
-          <h1>WHYGOABROAD FURNITURE</h1>
-          <p>Welcome to our landing page</p>
-          <a href="">enjoy the site</a>
-        </div>
-      </div>
-    </div>
+      <div class="animation">
+        <div class="row">
+          <nav class="navbar">
+             <a href="Landing_page.html"> <img src="image/WhyGoabroad Logo.png"></a>
+             <ul>
+               <li><a href="#">Home</a></li>
+               <li><a href="#">About_us</a></li>
+               <li><a href="#">Collection</a></li>
+               <li><a href="#">serives</a></li>
+               <li><a href="#">Contact_us</a></li>
+              </ul>
+            </nav>
+            <div class="search-bar">
+              <input type="text" placeholder="search anything" name="q" />
+             </div>
+             <div class="content">
+               <h1>WHYGOABROAD FURNITURE</h1>
+               <p>Welcome to our landing page</p>
+               </div>
+                <div class="Box">
+                  <div class="animation">
+                    <a href="">enjoy the site</a>
+                  </div>
+                </div>   
+        </div> 
+      </div>      
+    </div>      
   </body>
 </html>
